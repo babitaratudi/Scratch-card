@@ -1,1 +1,1 @@
-# Scratch-Card-using-HTML-and-CSS
+# Scratch-Card
