@@ -9,13 +9,22 @@ $(".card").wScratchPad({
 });
 
 console.log(bg)*/
-
+var c=0;
 function select(self){
-  var id=self.getAttribute("data-id")
-  console.log(id)
-  var num = Math.floor(Math.random() * 9) + 1;  
-  document.getElementById(id).src=`assets/img/items/${num}.jpg`
-  document.getElementById(id).innerHTML=`"Hurrey! You Won 10% Discount"`
+  
+    var id=self.getAttribute("data-id")
+    console.log(id)
+    if(c==0){
+      var num = Math.floor(Math.random() * 9) + 1;  
+      document.getElementById(id).src=`assets/img/items/${num}.jpg`
+      document.getElementById(`${id}st`).style.display="block"
+      c=c+1;
+    }
+    else{
+      alert("You have chosen already")
+    }
+    
+
 }
 
 
